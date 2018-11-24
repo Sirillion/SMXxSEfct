@@ -4,4 +4,4 @@ SMXxSEfct is a ScreenEffect remover that will remove the Blurry screen effect th
 
 > Dependencies: None.
 
-> Compatibility: 
+> Compatibility:  Will work with all mods/modlets that doesn't modify the same content in buffs.xml.
