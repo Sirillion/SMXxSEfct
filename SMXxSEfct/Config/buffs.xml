@@ -1,0 +1,36 @@
+<configs>
+
+<!--	// MODLET:			SMXxSEfct
+
+		// EAC:				Friendly
+
+		// VERSION:			A17b199eR1
+
+		// BUILD:			A17b199
+
+		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
+							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
+							and you can verify this by looking at the date of the standard files when an update have occured.
+
+		// MOD DESCRIPTION:	The purpose of this modlet is to remove the "WATERCOLOR SCREEN EFFECT" when getting stunned for those that have performance
+							issues with their gaming rigs.
+
+		// DEPENDENCIES:	None.
+
+		// TERMS OF USE:	You are allowed to use this modlet for your own personal use and/or distribute said modlet bundled with something of your own
+							creation as long as the files remain unaltered and you do not claim credit for its creation.
+							You are welcome to, but not required to, inform the author of this modlet should you wish to bundle and re-distribute said
+							modlet as described above.
+
+		// CREDITS:			Sirillion (author)
+-->
+
+
+<!--	// SMX // Screen Effect Remover -->
+
+
+	<remove xpath="/buffs/buff[@name='buffInjuryStunned1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
+	<remove xpath="/buffs/buff[@name='buffInjuryStunned2']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
+	<remove xpath="/buffs/buff[@name='buffInjuryUnconscious']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
+
+</configs>
