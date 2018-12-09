@@ -4,23 +4,27 @@
 
 		// EAC:				Friendly
 
-		// VERSION:			A17b199eR1
+		// VERSION:			A17b208eR1
 
-		// BUILD:			A17b199
+		// BUILD:			A17b208e
 
 		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
 							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
 							and you can verify this by looking at the date of the standard files when an update have occured.
 
-		// MOD DESCRIPTION:	The purpose of this modlet is to remove the "WATERCOLOR SCREEN EFFECT" when getting stunned for those that have performance
-							issues with their gaming rigs.
+		// MOD DESCRIPTION:	The purpose of this modlet is to remove the screen effects that occur in combat for those that have performance issues when
+							playing 7 Days to Die.
 
 		// DEPENDENCIES:	None.
 
-		// TERMS OF USE:	You are allowed to use this modlet for your own personal use and/or distribute said modlet bundled with something of your own
-							creation as long as the files remain unaltered and you do not claim credit for its creation.
-							You are welcome to, but not required to, inform the author of this modlet should you wish to bundle and re-distribute said
-							modlet as described above.
+		// TERMS OF USE:	You are allowed to use this modlet for your own personal use and/or distribute said modlet bundled with something of your
+							own creation as long as the files remain unaltered and you do not claim credit for creating any of them.
+
+							You are welcome, but not required, to inform the developer of this modlet should you wish to bundle and re-distribute
+							said modlet as described above.
+
+							You are not allowed to use any of the assets bundled with the SMX modlets in other projects where SMX modlets are not
+							included and credited.
 
 		// CREDITS:			Sirillion (author)
 -->
@@ -28,9 +32,29 @@
 
 <!--	// SMX // Screen Effect Remover -->
 
+	<!--remove xpath="/buffs/buff[@name='buffDrunk1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffDrunk2']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<!--remove xpath="/buffs/buff[@name='buffCrouching']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<!--remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<!--remove xpath="/buffs/buff[@name='buffRadiation3']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<!--remove xpath="/buffs/buff[@name='buffPuking1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffBeer']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<!--remove xpath="/buffs/buff[@name='buffDrunkGrandpasMoonshine']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<!--remove xpath="/buffs/buff[@name='buffDrugRecogSideEffect']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+
+	<remove xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
 
 	<remove xpath="/buffs/buff[@name='buffInjuryStunned1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
 	<remove xpath="/buffs/buff[@name='buffInjuryStunned2']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
+
 	<remove xpath="/buffs/buff[@name='buffInjuryUnconscious']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
 
 </configs>
