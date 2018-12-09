@@ -1,6 +1,7 @@
-# SMXxSEfct A17b199eR1
+# SMXxSEfct A17b208eR1
 
-SMXxSEfct is a ScreenEffect remover that will remove the Blurry screen effect that occurs when you are getting stunned. Made for those that don't like it or get performance issues because of it.
+The purpose of this modlet is to remove the screen effects that occur in combat for those that have performance issues when
+playing 7 Days to Die.
 
 > Dependencies: None.
 
