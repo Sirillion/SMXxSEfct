@@ -4,16 +4,16 @@
 
 		// EAC:				Friendly
 
-		// VERSION:			A17b208eR1
+		// VERSION:			A17b221eR1
 
-		// BUILD:			A17b208e
+		// BUILD:			A17b221e
 
 		// DISCLAIMER:		Please be advised that this modlet is intended for use with the build mentioned above. That said it may very well be that
 							it can be used with other builds with little to no risk of failure. It all depends on the standard files being updated or not
 							and you can verify this by looking at the date of the standard files when an update have occured.
 
-		// MOD DESCRIPTION:	The purpose of this modlet is to remove the screen effects that occur in combat for those that have performance issues when
-							playing 7 Days to Die.
+		// MOD DESCRIPTION:	SMXxSEfct is a ScreenEffect remover that will remove the taxing screen effects that occur when you are getting stunned, receive
+							bleedouts or otherwise the ScreenEffects during combat.
 
 		// DEPENDENCIES:	None.
 
@@ -23,38 +23,21 @@
 							You are welcome, but not required, to inform the developer of this modlet should you wish to bundle and re-distribute
 							said modlet as described above.
 
-							You are not allowed to use any of the assets bundled with the SMX modlets in other projects where SMX modlets are not
+							You are not allowed to use any of the assets bundled with this SMX modlet in other projects where said SMX modlet is not
 							included and credited.
 
 		// CREDITS:			Sirillion (author)
 -->
 
-
 <!--	// SMX // Screen Effect Remover -->
 
-	<!--remove xpath="/buffs/buff[@name='buffDrunk1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffDrunk2']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<set xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
 
-	<!--remove xpath="/buffs/buff[@name='buffCrouching']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
+	<set xpath="/buffs/buff[@name='buffInjuryStunned1']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+	<set xpath="/buffs/buff[@name='buffInjuryStunned2']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
 
-	<!--remove xpath="/buffs/buff[@name='buffElementHot']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffElementSweltering']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffElementCold']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffElementFreezing']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-
-	<!--remove xpath="/buffs/buff[@name='buffRadiation3']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-
-	<!--remove xpath="/buffs/buff[@name='buffPuking1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffBeer']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-
-	<!--remove xpath="/buffs/buff[@name='buffDrunkGrandpasMoonshine']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-	<!--remove xpath="/buffs/buff[@name='buffDrugRecogSideEffect']/effect_group/triggered_effect[@action='ModifyScreenEffect']" /-->
-
-	<remove xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
-
-	<remove xpath="/buffs/buff[@name='buffInjuryStunned1']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
-	<remove xpath="/buffs/buff[@name='buffInjuryStunned2']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
-
-	<remove xpath="/buffs/buff[@name='buffInjuryUnconscious']/effect_group/triggered_effect[@action='ModifyScreenEffect']" />
+	<set xpath="/buffs/buff[@name='buffInjuryUnconscious']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
+	
+	<set xpath="/buffs/buff[@name='buffAnemia4']/effect_group/triggered_effect[@trigger='onSelfBuffStart']/@intensity">0</set>
 
 </configs>
