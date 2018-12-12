@@ -1,7 +1,6 @@
-# SMXxSEfct A17b208eR1
+# SMXxSEfct A17b221eR1
 
-The purpose of this modlet is to remove the screen effects that occur in combat for those that have performance issues when
-playing 7 Days to Die.
+SMXxSEfct is a ScreenEffect remover that will remove the taxing screen effects that occur when you are getting stunned, receive bleedouts or otherwise the ScreenEffects during combat.
 
 > Dependencies: None.
 
