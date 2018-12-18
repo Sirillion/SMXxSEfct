@@ -1,4 +1,4 @@
-# SMXxSEfct A17b221eR1
+# SMXxSEfct A17b231eR1
 
 SMXxSEfct is a ScreenEffect remover that will remove the taxing screen effects that occur when you are getting stunned, receive bleedouts or otherwise the ScreenEffects during combat.
 
